@@ -1,8 +1,5 @@
 <?php
-
-
-$txt_usuario = "Marlon"
-
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -198,8 +195,8 @@ $txt_usuario = "Marlon"
                                                 <img class="img-circle" src="img/user.jpg" title="profile" alt="profile" />
                                             </a>
                                             <div class="media-body description">
-                                                <p><strong><?php echo $txt_usuario; ?></strong></p>
-                                                <p class="muted">johndoe@mail.com</p>
+                                                <p><strong><?php echo $_SESSION['cusuario']; ?></strong></p>
+                                                <p class="muted"><?php echo $_SESSION['ccorreo']; ?></p>
                                                 <p class="action"><a class="link" href="#">Activity</a> - <a class="link" href="#">Setting</a></p>
                                                 <a href="bonus-page/resume/index.html" class="btn btn-primary btn-small btn-block">View Profile</a>
                                             </div>

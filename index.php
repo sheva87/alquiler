@@ -234,16 +234,19 @@ function contenido(){
                                 <h3><i class="icon-eye-open pull-right"></i>Iniciar Sesíon</h3>
                                 <div>
                                     <p>
-                                        <form method="POST" action="intranet/index.php">
+                                    <form method="POST" id="frmlogin" >
                                        <table>
                                         <tr>
-                                            <td><input class="span12" required id="txt_usuario" name="txt_usuario" type="text" x-webkit-speech="x-webkit-speech" placeholder="Ingrese su Usuario"></td>
+                                            <td><input class="span12"  id="txt_usuario" name="txt_usuario" type="text" x-webkit-speech="x-webkit-speech" placeholder="Ingrese su Usuario"></td>
                                         </tr>
                                         <tr>
-                                            <td><input class="span12" required id="txt_clave" name="txt_clave" type="text" x-webkit-speech="x-webkit-speech" placeholder="Ingrese su Contraseña"></td>
+                                            <td><input class="span12"  id="txt_clave" name="txt_clave" type="password" x-webkit-speech="x-webkit-speech" placeholder="Ingrese su Contraseña"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="submit" id="btningresar" name="btningresar" value="Ingresar" class="btn btn-small"></td>
+                                            <td><input type="submit"  id="btningresar" name="btningresar" value="Ingresar" class="btn btn-small"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div id="mensaje" ></div></td>
                                         </tr>
                                        </table> 
                                         </form>
@@ -264,6 +267,6 @@ function contenido(){
 
 <?php }
 
- include './master/master.php';
+ include 'master/master.php';
 
 ?>

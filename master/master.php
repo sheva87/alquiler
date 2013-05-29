@@ -41,6 +41,10 @@ $cn = conectarse();
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://myorange.ca/theme/peachrealestate/ico/apple-touch-icon-72-precomposed.html">
         <link rel="apple-touch-icon-precomposed" href="http://myorange.ca/theme/peachrealestate/ico/apple-touch-icon-57-precomposed.html">
 
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/jquery.ui.min.js"></script>
+        <script src="js/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+        
         <!--
                 NOTE: All the javascripts have been moved to the bottom of the page to load the content faster.
         -->
@@ -145,10 +149,12 @@ $cn = conectarse();
 
         <!--[if !lte IE 6]><!-->
         <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-        <script>window.jQuery.ui || document.write('<script src="js/libs/jquery.ui.min.js"><\/script>')</script>
+        
+        
+        <script src="js/libs/jsValidar.js"></script>
+        <script src="js/libs/jsGlobal.js"></script>
+        
+        
 
         <!-- RECOMMENDED: For (IE6 - IE8) CSS3 pseudo-classes and attribute selectors -->
         <!--[if lt IE 9]> 
